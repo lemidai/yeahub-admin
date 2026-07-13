@@ -23,7 +23,12 @@ export default defineConfig([
       prettier
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      '@typescript-eslint/no-unused-vars': ['error', { 
+        argsIgnorePattern: '^_',      // Игнорировать аргументы, начинающиеся с _
+        varsIgnorePattern: '^_',      // Игнорировать переменные, начинающиеся с _
+        caughtErrorsIgnorePattern: '^_', // Игнорировать ошибки в catch
+        ignoreRestSiblings: true,     // Игнорировать rest-параметры
+      }],
       "prettier/prettier": [
         "error",
         {
