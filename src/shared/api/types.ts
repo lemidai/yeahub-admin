@@ -11,18 +11,18 @@ export function isSerializedError(error: unknown): error is SerializedError {
   return typeof error === "object" && error !== null && "message" in error;
 }
 
-export type ApiListResponse<T> = {
-  data: T[];
-};
+// export type ApiListResponse<T> = {
+//   data: T[];
+// };
 
-export type ApiQueryResult<T> = {
-  data?: ApiListResponse<T>;
-  isLoading: boolean;
-  isError: boolean;
-  isFetching: boolean;
-  refetch: () => void;
-  isSuccess: boolean;
-  error?: any;
-};
+// export type ApiQueryResult<T> = {
+//   data?: ApiListResponse<T>;
+//   isLoading: boolean;
+//   isError: boolean;
+//   isFetching: boolean;
+//   refetch: () => void;
+//   isSuccess: boolean;
+//   error?: any;
+// };
 
-export type ApiQueryHook<T> = () => ApiQueryResult<T>;
+// export type ApiQueryHook<T> = () => ApiQueryResult<T>;
