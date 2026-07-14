@@ -15,5 +15,4 @@ export const AUTH_PATHS = [
 ] as const;
 
 export const TOKEN_KEY = "accessToken";
-
 export const SESSION_SLICE_KEY = "session";

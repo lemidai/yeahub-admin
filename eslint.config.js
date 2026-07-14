@@ -33,7 +33,7 @@ export default defineConfig([
         "error",
         {
           singleQuote: false,
-          printWidth: 130,
+          printWidth: 80,
           tabWidth: 2,
         }
       ],

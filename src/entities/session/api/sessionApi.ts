@@ -6,7 +6,9 @@ import { clearSessionDataInLS } from "../lib/helpers";
 
 export function injectSessionApi() {
   if (!baseApi) {
-    throw new Error("baseApi не проинициализирован: сначала вызовите initSessionTransport() в app/store/initAppStore.");
+    throw new Error(
+      "baseApi не проинициализирован: сначала вызовите initSessionTransport() в app/store/initAppStore.",
+    );
   }
 
   return baseApi.injectEndpoints({
