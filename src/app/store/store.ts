@@ -3,10 +3,12 @@ import "./registerApiEndpoints";
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector } from "react-redux";
 import { rootReducer } from "./rootReducer";
+import { baseApi } from "@/shared/api";
 
 export const store = configureStore({
   reducer: rootReducer,
-  middleware: (getDefalutMiddleware) => getDefalutMiddleware(),
+  middleware: (getDefalutMiddleware) =>
+    getDefalutMiddleware().concat(baseApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

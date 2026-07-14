@@ -1,5 +1,11 @@
+import { LoginForm } from "@/features/login/ui/LoginForm";
+
 function App() {
-  return <div>APP</div>;
+  return (
+    <div>
+      <LoginForm />
+    </div>
+  );
 }
 
 export default App;
