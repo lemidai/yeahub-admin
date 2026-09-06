@@ -23,7 +23,6 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        // Этот код будет автоматически добавлен в начало каждого SCSS-файла
         additionalData: `@use "@/app/styles/_inject.scss" as *;`,
       },
     },
