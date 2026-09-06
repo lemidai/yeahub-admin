@@ -1,0 +1,29 @@
+.sidebar {
+     flex: 0 0 42%;
+     background-color: $btn-primary-bg;
+     max-width: 520px;
+     display: flex;
+     justify-content: center;
+}
+
+.content {
+     margin: 0 20px;
+     margin-top: 20%;
+}
+
+.link {
+     display: flex;
+}
+
+.logoTree {
+     width: 64px;
+}
+
+.logoText{
+     width: 320px;
+}
+
+.text {
+     font-size: $font-size-20;
+     color: $color-white;
+}

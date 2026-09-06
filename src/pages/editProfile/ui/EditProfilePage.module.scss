@@ -1,0 +1,42 @@
+.page {
+    width: 100%;
+    max-width: 1600px;
+    padding: 24px;
+    background-color: $color-white;
+    border-radius: $radius-l;
+}
+
+.head {
+    @include body5-strong;
+    margin-bottom: 24px;
+}
+
+.navigation {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.navList {
+    display: flex;
+    background-color: $main-bg;
+    padding: 10px;
+    border-radius: $radius-l;
+    gap: 10px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.navOption {
+    padding: 10px;
+    border-radius: $radius-xm; 
+    color: #747474;
+    white-space: nowrap;
+    @include body4  
+    
+}
+   
+.activeOption {
+    color: $link-color;
+    background-color: white;
+}
+

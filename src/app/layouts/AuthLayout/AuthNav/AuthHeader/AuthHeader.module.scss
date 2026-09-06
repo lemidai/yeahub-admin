@@ -1,0 +1,19 @@
+.header {
+    padding: 20px 30px;
+    @include mobileS {
+        padding: 12px 16px;
+    }
+}
+
+.link {
+    display: flex;
+    gap: 8px;
+}
+
+.logoTree {
+     width: 33px;
+}
+
+.logoText{
+     width: 99px;
+}

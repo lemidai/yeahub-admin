@@ -1,10 +1,13 @@
-import { LoginForm } from "@/features/login/ui/LoginForm";
+import { RouterProvider } from "react-router/dom";
+import { router } from "./providers";
+import { Toaster } from "@/shared/toaster";
 
 function App() {
   return (
-    <div>
-      <LoginForm />
-    </div>
+    <>
+      <RouterProvider router={router} />
+      <Toaster />
+    </>
   );
 }
 

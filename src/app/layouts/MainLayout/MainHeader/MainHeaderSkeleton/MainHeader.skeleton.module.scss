@@ -1,0 +1,26 @@
+.headerSkeleton {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid $border-color;
+    padding: 0 20px;
+}
+
+.headerContentWrapperSkeleton {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.headerPopoverToggle {
+    display: flex;
+}
+
+.username {
+    width: 96px;
+    height: 36px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+}

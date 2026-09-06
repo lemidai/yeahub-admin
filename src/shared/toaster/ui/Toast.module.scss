@@ -1,0 +1,52 @@
+.toast {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 14px 16px;
+	border-radius: 12px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+	min-width: 260px;
+	max-width: 360px;
+	&.success {
+		background-color: #d4edda;
+		border: 1px solid #b7d4b7;
+		color: #155724;
+	}
+	&.error {
+		background-color: #f8d7da;
+		border: 1px solid #f5c6cb;
+		color: #721c24;
+	}
+}
+
+.icon {
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.content {
+	flex: 1;
+}
+
+.title {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #191919;
+}
+
+.message {
+	margin: 2px 0 0;
+	font-size: 13px;
+}
+
+.close {
+	background: none;
+	border: none;
+	font-size: 18px;
+	color: #a3a3a3;
+	cursor: pointer;
+	padding: 0;
+	line-height: 1;
+	flex-shrink: 0;
+}

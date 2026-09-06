@@ -1,0 +1,9 @@
+.upload {
+    display: flex;
+    max-width: 1010px;
+    gap: 40px;
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
