@@ -1,0 +1,64 @@
+.section {
+    display: flex;
+    gap: 120px;
+    @include tablet {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.sectionInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 230px;
+    width: 100%;
+}
+
+.sectionTitle {
+ height: 20px;
+ width: 230px;
+}
+
+.sectionDescription {
+    height: 32px;
+    width: 230px;
+}
+
+.controller {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.selectTitle {
+    width: 96px;
+    height: 20px;
+}
+
+.selectField {
+    width: 400px;
+    height: 48px;
+}
+
+.controllerSelectedOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.optionsTitle {
+    width: 120px;
+    height: 20px;
+}
+
+.selectedOptions {
+    width: 400px;
+    height: 48px;
+}

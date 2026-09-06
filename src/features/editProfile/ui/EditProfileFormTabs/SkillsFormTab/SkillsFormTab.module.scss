@@ -1,0 +1,75 @@
+.section {
+    display: flex;
+    gap: 120px;
+    @include tablet {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.sectionInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 230px;
+    width: 100%;
+}
+
+.sectionTitle {
+ @include body4
+}
+
+.sectionDescription {
+    @include body2;
+    color: #303030;
+}
+
+.controllers {
+    display: flex;
+    gap: 20px;
+    input {
+        width: 320px;
+    }
+    &.rowList {
+        flex-wrap: wrap;
+    }
+    &.columnList {
+        flex-direction: column;
+    }
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.selected {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.selectedTitle {
+    font-size: $font-size-16;
+    color: $text-title;
+}
+
+.selectedList {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.selectedItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 6px 12px;
+    border: 1px solid $border-color-active;
+    border-radius: $radius-xm;
+    font-size: $font-size-16;
+    white-space: nowrap;
+}

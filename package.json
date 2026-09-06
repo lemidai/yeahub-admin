@@ -12,11 +12,17 @@
     "testCI": "node ./scripts/test.js"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
     "@reduxjs/toolkit": "^2.12.0",
+    "clsx": "^2.1.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-dropzone": "^19.1.1",
+    "react-error-boundary": "^6.1.3",
+    "react-hook-form": "^7.82.0",
     "react-redux": "^9.3.0",
-    "react-router": "^8.2.0"
+    "react-router": "^8.2.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

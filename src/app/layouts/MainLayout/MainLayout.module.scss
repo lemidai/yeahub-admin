@@ -1,0 +1,18 @@
+.layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 76px 1fr;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 24px 20px;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: calc(100vh - 76px);
+}

@@ -1,0 +1,13 @@
+.layout {
+    display: flex;
+    height: 100vh;
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.content {
+    flex: 1;
+    height: 100vh;
+    padding: 180px 16px 70px;
+}

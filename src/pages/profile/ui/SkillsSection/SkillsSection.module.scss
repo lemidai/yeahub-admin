@@ -1,0 +1,11 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill {
+    border-radius: $radius-xm;
+    border: 1px solid $btn-primary-bg;
+    padding: 10px 12px;
+}
