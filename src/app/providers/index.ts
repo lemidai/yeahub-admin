@@ -1,2 +1,2 @@
 export { router } from "./router/router";
-export { StoreProvider } from "./StoreProvider";
+export { StoreProvider } from "./store/StoreProvider";

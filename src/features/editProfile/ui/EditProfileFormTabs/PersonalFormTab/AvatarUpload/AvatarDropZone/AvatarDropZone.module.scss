@@ -1,0 +1,30 @@
+.dropzone {
+    flex: 1;
+    border: 2px dashed #c39dff;
+    border-radius: $radius-l;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    min-height: 188px;
+    padding: 0 40px;
+    color: #757575;
+    font-size: $font-size-14;
+    pointer-events: none;
+
+
+    .clickText {
+        color: $link-color;
+    }
+    
+    .formatHintText {
+        color: #A3A3A3;
+        font-size: $font-size-12;
+    }
+}

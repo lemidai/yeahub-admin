@@ -22,9 +22,12 @@ $skeleton-color: #f0f0f0;
 
 // ===== ЦВЕТА ГРАНИЦ =====
 $border-color: #bababa;
-$border-color-active: rgb(85, 9, 204);
-$border-input: rgba(106, 11, 255);
-$border-input-hover: rgba(106, 11, 255, 0.5);
+$border-color-header: #d1d1d1;
+$border-color-secondary: #eaeaea;
+$border-color-active: #5509cc;
+$border-color-error: #ab3d3d;
+$border-input: #6a0bff;
+$border-input-hover: #6a0bff80;
 $border-color-input-filter: #e8e8e8;
 
 // ===== РАЗМЕР ШРИФТОВ =====
@@ -39,8 +42,6 @@ $font-size-34: 34px;
 $font-size-40: 40px;
 $font-size-60: 60px;
 
-// ===== НАСТРОЙКИ ШРИФТА =====
-$font-family: 'Manrope', sans-serif;
 
 // font-weight
 $font-weight-reg: 400;
@@ -74,128 +75,9 @@ $radius-xxxl: 68px;
 
 // ===== ЦВЕТА КНОПОК =====
 $btn-primary-bg: #6a0bff;
+$btn-primary-bg-hover: #7018fd;
 $btn-primary-text: #ffffff;
-$btn-active-bg: #f8f8f8;
+$btn-hover-bg: #f8f8f8;
 
 // ===== ДОП ЦВЕТА =====
 $background-skeleton: #D1D1D145;
-
-  /* ==========================================================================
-   ЗАГОЛОВКИ (Headlines)
-   ========================================================================== */
-
-  .head1 {
-    font-size: var(--font-size-60);
-    line-height: var(--line-height-115);
-    text-transform: uppercase;
-  }
-
-  .head2 {
-    font-size: var(--font-size-40);
-    line-height: var(--line-height-115);
-    text-transform: uppercase;
-  }
-
-  .head3 {
-    font-size: var(--font-size-34);
-    line-height: var(--line-height-115);
-    text-transform: uppercase;
-  }
-
-  .head4 {
-    font-size: var(--font-size-18);
-    line-height: var(--line-height-127);
-  }
-
-  .head5 {
-    font-size: var(--font-size-18);
-    line-height: var(--line-height-127);
-    text-transform: uppercase;
-  }
-
-  /* ==========================================================================
-   ОСНОВНОЙ ТЕКСТ (Body)
-   ========================================================================== */
-
-  /* Body 1 */
-  .body1 {
-    font-size: var(--font-size-12);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-reg);
-  }
-  .body1-accent {
-    font-size: var(--font-size-12);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-med);
-  }
-
-  /* Body 2 */
-  .body2 {
-    font-size: var(--font-size-14);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-reg);
-  }
-  .body2-accent {
-    font-size: var(--font-size-14);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-med);
-  }
-  .body2-strong {
-    font-size: var(--font-size-14);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-sb);
-  }
-
-  /* Body 3 */
-  .body3 {
-    font-size: var(--font-size-16);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-reg);
-  }
-  .body3-accent {
-    font-size: var(--font-size-16);
-    line-height: var(--line-height-130); /* В макете 130% */
-    font-weight: var(--font-weight-med);
-  }
-  .body3-strong {
-    font-size: var(--font-size-16);
-    line-height: var(--line-height-130); /* В макете 130% */
-    font-weight: var(--font-weight-sb);
-  }
-
-  /* Body 4 */
-  .body4 {
-    font-size: var(--font-size-18);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-sb);
-  }
-
-  /* Body 5 */
-  .body5 {
-    font-size: var(--font-size-20);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-reg);
-  }
-  .body5-capitalize {
-    font-size: var(--font-size-20);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-med);
-    text-transform: uppercase; /* Судя по тексту "BODY5" капсом */
-  }
-  .body5-accent {
-    font-size: var(--font-size-20);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-med);
-  }
-  .body5-strong {
-    font-size: var(--font-size-20);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-sb);
-  }
-
-  /* Body 6 */
-  .body6 {
-    font-size: var(--font-size-24);
-    line-height: var(--line-height-120);
-    font-weight: var(--font-weight-med);
-  }

@@ -1,0 +1,49 @@
+.section {
+    display: flex;
+    gap: 120px;
+    width: 100%;
+    @include tablet {
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+.sectionInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 230px;
+    width: 100%;
+}
+
+.sectionTitle {
+ @include body4
+}
+
+.sectionDescription {
+    @include body2;
+    color: #303030;
+}
+
+.controllers {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    input {
+        width: 320px;
+    }
+    &.rowList {
+        flex-wrap: wrap;
+    }
+    &.columnList {
+        flex-direction: column;
+    }
+    .bio {
+        max-width: 700px;
+        width: 100%;
+        min-height: 200px;
+        border-radius: 12px;
+        border: 1px solid black;
+        padding: 16px;
+    }
+}

@@ -1,29 +1,54 @@
 import { createBrowserRouter } from "react-router";
 import { ROUTES } from "@/shared/config/routes";
-import { ProtectedRoute } from "./ProtectedRoute";
 import { PublicRoute } from "./PublicRoute";
-import { AdminPage } from "@/pages/AdminPage/AdminPage";
-import { LoginPage } from "@/pages/LoginPage/LoginPage";
+import { ProtectedRoute } from "./ProtectedRoute";
+import { AuthLayout } from "@/app/layouts/AuthLayout/AuthLayout";
+import { MainLayout } from "@/app/layouts/MainLayout/MainLayout";
+import { ProfilePageLazy } from "@/pages/profile";
+import { LoginPage } from "@/pages/login/ui/LoginPage";
+import { NotFoundPage } from "@/pages/notFound";
+import { MainPage } from "@/pages/main/ui/MainPage";
+import { EditProfilePage } from "@/pages/editProfile/ui/EditProfilePage";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
     element: <PublicRoute />,
     children: [
       {
-        index: true,
-        element: <LoginPage />,
+        element: <AuthLayout />,
+        children: [
+          {
+            path: ROUTES.login,
+            element: <LoginPage />,
+          },
+        ],
       },
     ],
   },
   {
-    path: ROUTES.admin,
     element: <ProtectedRoute />,
     children: [
       {
-        index: true,
-        element: <AdminPage />,
+        element: <MainLayout />,
+        children: [
+          {
+            path: ROUTES.main,
+            element: <MainPage />,
+          },
+          {
+            path: ROUTES.profile,
+            element: <ProfilePageLazy />,
+          },
+          {
+            path: ROUTES.editProfile,
+            element: <EditProfilePage />,
+          },
+        ],
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);

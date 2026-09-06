@@ -1,10 +1,11 @@
 @use 'variables' as *;
 @use 'reset' as *;
+@use 'typography' as *;
 
 body {
     background-color: $main-bg;
     line-height: 1.4;
-    font-family: $font-family;
+    font-family: $mainFont;
     font-size: $font-size-16;
     font-weight: $font-weight-reg;
 }

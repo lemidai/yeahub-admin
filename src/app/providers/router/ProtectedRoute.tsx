@@ -1,12 +1,12 @@
-import { useSelector } from "react-redux";
-import { selectAccessToken } from "@/entities/session/model/selectors";
 import { Navigate, Outlet } from "react-router";
-import { ROUTES } from "@/shared/config/routes";
+import { useAppSelector } from "@/app/store";
+import { selectAccessToken } from "@/features/auth/model/selectors";
 
 export const ProtectedRoute = () => {
-  const access = useSelector(selectAccessToken);
+  const access = useAppSelector(selectAccessToken);
+
   if (!access) {
-    return <Navigate to={ROUTES.login} replace />;
+    return <Navigate to="/login" replace />;
   }
   return <Outlet />;
 };
